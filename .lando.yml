@@ -1,0 +1,4 @@
+name: dcon-2018-searchapi-solr
+recipe: drupal8
+config:
+  webroot: docroot
