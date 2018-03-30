@@ -33,3 +33,8 @@ docroot/sites/simpletest
 
 # Ignore Acquia Dev Desktop configs.
 docroot/sites/*.dd
+
+# Reference assets.
+reference/*
+!reference/.gitkeep
+!reference/db.sql.gz
