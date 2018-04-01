@@ -265,6 +265,11 @@ if (getenv('LANDO_APP_NAME')) {
  * @endcode
  */
 $config_directories = array();
+$config_directories = array(
+  'sync' => '../config/base',
+  'local' => '../config/local',
+  'dev' => '../config/dev'
+);
 
 /**
  * Settings:
@@ -809,4 +814,3 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'thunder';
-$config_directories['sync'] = 'sites/default/files/config_8KKEF-mlxI-s6BKi4JxlStQmSqqV-cf3T43tof9QbmVXx4FTlCCiclztxKmMb9QDkQHfes6kQg/sync';
