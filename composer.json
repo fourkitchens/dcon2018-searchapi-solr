@@ -44,7 +44,10 @@
         "drush/drush": "~8.0|^9.0.0-beta8",
         "oomphinc/composer-installers-extender": "^1.1",
         "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3"
+        "webmozart/path-util": "^2.3",
+        "drupal/search_api": "^1.7",
+        "drupal/search_api_solr": "^1.2",
+        "drupal/facets": "^1.0@beta"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
