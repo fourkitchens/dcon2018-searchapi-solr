@@ -7,6 +7,6 @@ proxy:
     - admin.solr.lndo.site:8983
 services:
   solrindex:
-    type: solr:7.1
+    type: solr:6.6
     portforward: 9999
     core: drupal_search
