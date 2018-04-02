@@ -1,0 +1,30 @@
+uuid: 8c310212-b700-4abf-b342-f6315e1ff283
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallery.field_media
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - inline_entity_form
+_core:
+  default_config_hash: PoUMY0ekCyv7vNlFwV9VH4mOJEApXuCHH0kuRAv55dU
+id: paragraph.gallery.default
+targetEntityType: paragraph
+bundle: gallery
+mode: default
+content:
+  field_media:
+    type: inline_entity_form_simple
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Gallery
+      label_plural: Galleries
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

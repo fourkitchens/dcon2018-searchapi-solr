@@ -1,0 +1,16 @@
+uuid: 1aab02a2-c807-4796-aee7-09410a22aaa5
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: DzxktwwuWU1Ye2GaHSHzSTfHq1bMpXAmNSV7mwxi84s
+name: paragraph_preview_thumbnail
+label: 'Paragraph Preview Thumbnail'
+effects:
+  701f3d12-4741-47a1-8a88-7a96487c9be1:
+    uuid: 701f3d12-4741-47a1-8a88-7a96487c9be1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 90

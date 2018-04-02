@@ -1,0 +1,25 @@
+uuid: a3f2883b-89d6-4d41-bd30-ff24c50ca77a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_meta_tags
+    - taxonomy.vocabulary.channel
+  module:
+    - metatag
+_core:
+  default_config_hash: Z30RqDusiLn_op4uVuuO1P743vs6TFJwJTUQQlgtwTQ
+id: taxonomy_term.channel.field_meta_tags
+field_name: field_meta_tags
+entity_type: taxonomy_term
+bundle: channel
+label: 'Meta Tags'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

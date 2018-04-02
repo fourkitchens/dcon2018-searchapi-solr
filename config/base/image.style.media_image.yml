@@ -1,0 +1,19 @@
+uuid: f95b8c50-a18f-4976-a5f8-ee015dbdde23
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: 4wCzow3p2HyCeSA4ciHt1gL4VdclUd-9iVxKJOqdtoQ
+name: media_image
+label: 'Media Image'
+effects:
+  21ef239e-0d92-4fcc-84fc-17f4da42ae2f:
+    uuid: 21ef239e-0d92-4fcc-84fc-17f4da42ae2f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 938
+      height: 527
+      crop_type: focal_point

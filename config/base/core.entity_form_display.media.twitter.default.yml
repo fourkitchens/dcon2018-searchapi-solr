@@ -1,0 +1,34 @@
+uuid: 7a45ec5e-a484-4108-a108-2657d9d56fcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.twitter.field_author
+    - field.field.media.twitter.field_content
+    - field.field.media.twitter.field_url
+    - media_entity.bundle.twitter
+  module:
+    - link
+_core:
+  default_config_hash: k1nMkcDreyOEMRUCKkg7PfSV9UOCn7atf6WYogaoYMc
+id: media.twitter.default
+targetEntityType: media
+bundle: twitter
+mode: default
+content:
+  field_url:
+    type: link_default
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_author: true
+  field_content: true
+  langcode: true
+  name: true
+  path: true
+  uid: true

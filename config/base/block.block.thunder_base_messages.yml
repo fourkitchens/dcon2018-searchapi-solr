@@ -1,0 +1,22 @@
+uuid: a0810f8e-8a02-4815-a9b5-7351abfa2107
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - thunder_base
+_core:
+  default_config_hash: NMYfh7M4ijRWzK92380GZgm-N9Xkbu-LJ61-7haqcTo
+id: thunder_base_messages
+theme: thunder_base
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

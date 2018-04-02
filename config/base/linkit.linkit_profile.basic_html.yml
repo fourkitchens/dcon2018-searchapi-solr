@@ -1,0 +1,34 @@
+uuid: b638ab96-3f7a-4c28-98bf-26c2f180660c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: JxIoOR0iB_8bRbUrta1Lr_CmfejEq9BXozXS8JA1JMA
+id: basic_html
+label: 'Basic HTML'
+description: ''
+attributes: {  }
+matchers:
+  abb64004-44db-4254-8189-1a06a4b8c830:
+    uuid: abb64004-44db-4254-8189-1a06a4b8c830
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: Article
+      bundles:
+        article: article
+      group_by_bundle: false
+      include_unpublished: false
+  54dba6c0-a78b-4f93-8955-b083b930a2ff:
+    uuid: 54dba6c0-a78b-4f93-8955-b083b930a2ff
+    id: 'entity:media'
+    weight: 0
+    settings:
+      result_description: Media
+      bundles:
+        gallery: gallery
+        image: image
+        video: video
+      group_by_bundle: true

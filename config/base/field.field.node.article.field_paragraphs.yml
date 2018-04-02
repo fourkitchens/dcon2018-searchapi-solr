@@ -1,0 +1,72 @@
+uuid: 9a56d8c9-b652-42bd-abff-3dc1ec098e44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.article
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.instagram
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.pinterest
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.twitter
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: uatxfdtx04QssvulG8fOSD3zYZn4bS3UM2N7hdzdYao
+id: node.article.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: article
+label: Paragraphs
+description: 'Add different types of content with various paragraphs.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text: text
+      quote: quote
+      link: link
+      instagram: instagram
+      twitter: twitter
+      gallery: gallery
+      image: image
+      video: video
+      pinterest: pinterest
+    target_bundles_drag_drop:
+      text:
+        enabled: true
+        weight: 1
+      quote:
+        enabled: true
+        weight: 2
+      link:
+        enabled: true
+        weight: 3
+      instagram:
+        enabled: true
+        weight: 4
+      twitter:
+        enabled: true
+        weight: 5
+      gallery:
+        enabled: true
+        weight: 6
+      image:
+        enabled: true
+        weight: 7
+      video:
+        enabled: true
+        weight: 8
+      pinterest:
+        enabled: true
+        weight: 9
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: ea38fd50-37d6-4c76-b65b-793e9f2ec0b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_content
+    - media_entity.bundle.twitter
+_core:
+  default_config_hash: G_RAKlgvqtFxxVapyjB6ndFS49plnNFQpeEeTBk9Eps
+id: media.twitter.field_content
+field_name: field_content
+entity_type: media
+bundle: twitter
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

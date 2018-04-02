@@ -1,0 +1,25 @@
+uuid: c58df28f-70fe-4b22-a39f-34c8cec176a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_url
+    - media_entity.bundle.instagram
+  module:
+    - link
+_core:
+  default_config_hash: B5JmLmMB8Q73Mj0fp1yenVX2nRcbeHUKKOqJJjgNK8c
+id: media.instagram.field_url
+field_name: field_url
+entity_type: media
+bundle: instagram
+label: 'Instagram url'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

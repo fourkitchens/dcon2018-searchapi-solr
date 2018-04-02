@@ -1,0 +1,25 @@
+uuid: d2d03623-f36c-48c2-999f-9a54629f6e3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - thunder_base
+_core:
+  default_config_hash: Tm83FwS11DMGfA-ZW_n9ZvixuACY9NWqydsRU3aRnA4
+id: thunder_base_branding
+theme: thunder_base
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: true
+visibility: {  }

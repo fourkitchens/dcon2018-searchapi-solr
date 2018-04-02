@@ -1,0 +1,14 @@
+uuid: af496a67-6bce-44ee-b436-e362033483c9
+name: 'Drupalcon Nashville'
+mail: jeff@fourkitchens.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

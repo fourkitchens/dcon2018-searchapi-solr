@@ -1,0 +1,20 @@
+uuid: 947eb019-f0bc-47c5-9085-444ef4e05402
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 72BCQw-3kl19XZUdiBalf-94kVQOemYOdpFXhN6P-3g
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access user profiles'
+  - 'access_unpublished node article'
+  - 'cancel account'
+  - 'change own username'
+  - 'use text format basic_html'
+  - 'view media'
+  - 'view published terms in channel'
+  - 'view published terms in tags'

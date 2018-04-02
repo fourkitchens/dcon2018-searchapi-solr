@@ -1,0 +1,9 @@
+uuid: 8d83bc19-3e8e-456c-bd2a-321c265faa14
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UZW0Up6qsXVyM5ePKlcDOK6eeQZfAXKZaD9uCy3XX7w
+id: link
+label: Link
+behavior_plugins: {  }

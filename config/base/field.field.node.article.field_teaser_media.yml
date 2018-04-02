@@ -1,0 +1,28 @@
+uuid: ac824baf-3d66-4958-b035-213d25a0c45f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_media
+    - media_entity.bundle.image
+    - node.type.article
+_core:
+  default_config_hash: rfxAKPIpTIGUIQDhiooQPbaSbZnuXP4s-PZ7t0TsIzs
+id: node.article.field_teaser_media
+field_name: field_teaser_media
+entity_type: node
+bundle: article
+label: 'Teaser Media'
+description: 'The teaser image is displayed on overview pages. Additionally, it''s used in <a href="https://instantarticles.fb.com" target="_blank">Facebook Instant Articles</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+field_type: entity_reference

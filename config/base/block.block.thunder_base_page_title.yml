@@ -1,0 +1,20 @@
+uuid: 5953ab12-b3c2-4f74-96dd-5b250756c7f2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - thunder_base
+_core:
+  default_config_hash: WiYwkKEpgBru-njo1rAKq0wNbyR7IESs2O48HJnZlq0
+id: thunder_base_page_title
+theme: thunder_base
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

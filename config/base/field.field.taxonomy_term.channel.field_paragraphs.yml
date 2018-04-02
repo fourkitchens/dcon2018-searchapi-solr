@@ -1,0 +1,72 @@
+uuid: 55325fc5-ea9b-4f62-a86d-b4dddb2f7aa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_paragraphs
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.instagram
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.pinterest
+    - paragraphs.paragraphs_type.quote
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.twitter
+    - paragraphs.paragraphs_type.video
+    - taxonomy.vocabulary.channel
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: WYy-2zMM1a9ORZZlnNGRYCO1m2Lh8nczH6xSH4kFLBY
+id: taxonomy_term.channel.field_paragraphs
+field_name: field_paragraphs
+entity_type: taxonomy_term
+bundle: channel
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      gallery: gallery
+      instagram: instagram
+      link: link
+      image: image
+      quote: quote
+      text: text
+      pinterest: pinterest
+      twitter: twitter
+      video: video
+    target_bundles_drag_drop:
+      gallery:
+        enabled: true
+        weight: 8
+      instagram:
+        enabled: true
+        weight: 9
+      link:
+        enabled: true
+        weight: 10
+      image:
+        enabled: true
+        weight: 11
+      quote:
+        enabled: true
+        weight: 12
+      text:
+        enabled: true
+        weight: 13
+      pinterest:
+        enabled: true
+        weight: 14
+      twitter:
+        enabled: true
+        weight: 14
+      video:
+        enabled: true
+        weight: 18
+field_type: entity_reference_revisions

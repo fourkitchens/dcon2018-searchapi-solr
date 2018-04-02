@@ -1,0 +1,9 @@
+admin_css: true
+responsive_image: true
+one_pixel: true
+blazy:
+  loadInvisible: false
+  offset: 100
+  saveViewportOffsetDelay: 50
+_core:
+  default_config_hash: xeJRcDgOToBMyAzzvFFIkism8tC6Y7-YH2LKsQFn1D4

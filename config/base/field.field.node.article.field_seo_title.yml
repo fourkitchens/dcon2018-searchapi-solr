@@ -1,0 +1,21 @@
+uuid: 53fee290-c693-4d7b-b0a5-acf20a16fa2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo_title
+    - node.type.article
+_core:
+  default_config_hash: Bk3i91LIrlbL5ab2RcaWz0zrGyvCuPkLb-6QXp8PpXw
+id: node.article.field_seo_title
+field_name: field_seo_title
+entity_type: node
+bundle: article
+label: 'SEO Title'
+description: 'The SEO Title is used for the automatic generation of the Url. It''s best to put the major keywords at the beginning.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

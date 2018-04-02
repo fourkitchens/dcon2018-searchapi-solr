@@ -1,0 +1,29 @@
+uuid: 6706ac25-05b1-4055-bb05-7bf1a3687882
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_channel
+    - node.type.article
+    - taxonomy.vocabulary.channel
+_core:
+  default_config_hash: JdJlo7Skw6Go_wtKf0UMjPa_LJU-8SJoiieM0a6wL9Q
+id: node.article.field_channel
+field_name: field_channel
+entity_type: node
+bundle: article
+label: Channel
+description: 'Channels represent the site hierarchy. Create new and change existing channels <a href="/admin/structure/taxonomy/manage/channel/overview" target="_blank">here</a>.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      channel: channel
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

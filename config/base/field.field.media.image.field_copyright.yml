@@ -1,0 +1,21 @@
+uuid: 19533b05-3d98-4cf9-aa9d-ded8027f4cc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_copyright
+    - media_entity.bundle.image
+_core:
+  default_config_hash: ARQRhjbXJnhb8zpBh53S1_Qzl5BYyzhPL8HwzlmgX_8
+id: media.image.field_copyright
+field_name: field_copyright
+entity_type: media
+bundle: image
+label: Copyright
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

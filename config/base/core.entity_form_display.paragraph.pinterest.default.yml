@@ -1,0 +1,30 @@
+uuid: fa6cf8d8-9f64-477f-be2d-82df1f291573
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pinterest.field_media
+    - paragraphs.paragraphs_type.pinterest
+  module:
+    - inline_entity_form
+_core:
+  default_config_hash: eTU3FZqzR3y5b7rShxQah0Oqh9eWuj738xn5GzckjAk
+id: paragraph.pinterest.default
+targetEntityType: paragraph
+bundle: pinterest
+mode: default
+content:
+  field_media:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

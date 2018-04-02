@@ -1,0 +1,9 @@
+uuid: 88db68d7-c967-4fc0-a050-e2cf02570b56
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nSPTUHpJ5ZHuSTUz41dZiNCYHqofO5ormZX1n6j53EA
+id: instagram
+label: Instagram
+behavior_plugins: {  }

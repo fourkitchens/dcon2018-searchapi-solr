@@ -1,0 +1,30 @@
+uuid: fee0012e-9604-48b9-ace3-7167b55c2c29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media_entity.bundle.twitter
+    - paragraphs.paragraphs_type.twitter
+_core:
+  default_config_hash: T4CqFFq8vm3O15iMTkL3LFrt3r3MZEpJ5WeRUSqBROg
+id: paragraph.twitter.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: twitter
+label: Media
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      twitter: twitter
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

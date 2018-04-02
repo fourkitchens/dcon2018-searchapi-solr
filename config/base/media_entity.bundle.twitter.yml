@@ -1,0 +1,34 @@
+uuid: 02a0ccb2-ac8e-4999-821a-344d7f4cca0e
+langcode: en
+status: true
+dependencies:
+  module:
+    - crop
+    - media_entity_twitter
+    - media_expire
+third_party_settings:
+  crop:
+    image_field: null
+  media_expire:
+    enable_expiring: null
+    expire_field: null
+    fallback_media: null
+_core:
+  default_config_hash: g6TIwO61ubBtBMDdXfjSWMVeyrMuIBNlUkd7GDeM7ow
+id: twitter
+label: Twitter
+description: ''
+type: twitter
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration:
+  use_twitter_api: false
+  generate_thumbnails: false
+  source_field: field_url
+  consumer_key: ''
+  consumer_secret: ''
+  oauth_access_token: ''
+  oauth_access_token_secret: ''
+field_map:
+  user: field_author
+  content: field_content
