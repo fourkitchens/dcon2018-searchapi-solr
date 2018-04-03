@@ -1,9 +1,9 @@
-uuid: ddbe780d-f464-4d65-aeda-f796a234dab4
+uuid: 01b08ecf-62f2-4b23-86a1-2cfa1190eb16
 langcode: en
-status: false
+status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.rss
+    - core.entity_view_mode.node.search_index
     - field.field.node.article.field_channel
     - field.field.node.article.field_meta_tags
     - field.field.node.article.field_paragraphs
@@ -13,41 +13,41 @@ dependencies:
     - field.field.node.article.field_teaser_text
     - node.type.article
   module:
+    - empty_fields
+    - entity_reference_revisions
     - user
 _core:
-  default_config_hash: 7rUmttvrmjE4eruLY1S2UnG7VuPwL_Z9tA0AvJhRU20
-id: node.article.rss
+  default_config_hash: IGE_nvsia8aFDINz5w9PaBeY_iVdQE3nIHbkyYazm9Q
+id: node.article.search_index
 targetEntityType: node
 bundle: article
-mode: rss
+mode: search_index
 content:
-  field_channel:
-    type: entity_reference_label
+  field_paragraphs:
+    type: entity_reference_revisions_entity_view
     weight: 0
-    label: inline
+    label: hidden
     settings:
-      link: false
+      view_mode: default
+      link: ''
     third_party_settings: {  }
     region: content
-  field_teaser_media:
-    type: entity_reference_entity_view
+  field_tags:
+    type: entity_reference_label
     weight: 1
-    label: inline
+    label: hidden
     settings:
-      view_mode: square_m
       link: false
-    third_party_settings: {  }
-    region: content
-  links:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      empty_fields:
+        handler: ''
     region: content
 hidden:
+  field_channel: true
   field_meta_tags: true
-  field_paragraphs: true
   field_seo_title: true
-  field_tags: true
+  field_teaser_media: true
   field_teaser_text: true
   langcode: true
+  links: true
   shariff_field: true
