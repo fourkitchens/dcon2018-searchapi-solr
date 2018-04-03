@@ -9,4 +9,6 @@ services:
   solrindex:
     type: solr:6.6
     portforward: 9999
-    core: drupal_search
+    core: collection1
+    config:
+      conf: docroot/modules/contrib/search_api_solr/solr-conf/6.x
