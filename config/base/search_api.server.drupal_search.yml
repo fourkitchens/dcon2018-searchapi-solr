@@ -15,12 +15,12 @@ backend_config:
     host: solrindex
     port: '8983'
     path: /solr
-    core: drupal_search
+    core: collection1
     timeout: 5
     index_timeout: 5
     optimize_timeout: 10
     commit_within: 1000
-    solr_version: '6'
+    solr_version: ''
     http_method: AUTO
   retrieve_data: false
   highlight_data: false
