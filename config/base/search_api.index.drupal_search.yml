@@ -1,0 +1,47 @@
+uuid: 79f230ab-4026-4797-8a6c-53e42026b415
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - search_api.server.drupal_search
+  module:
+    - search_api
+    - node
+id: drupal_search
+name: 'Drupal Search'
+description: 'This is the global site search server index.'
+read_only: false
+field_settings:
+  body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: drupal_search
