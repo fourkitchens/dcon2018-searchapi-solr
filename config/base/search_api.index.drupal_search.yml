@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.body
     - search_api.server.drupal_search
+    - core.entity_view_mode.node.search_index
   module:
     - search_api
     - node
@@ -13,6 +14,24 @@ name: 'Drupal Search'
 description: 'This is the global site search server index.'
 read_only: false
 field_settings:
+  article_content:
+    label: 'Article Content'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          article: search_index
+          page: ''
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
   body:
     label: Body
     datasource_id: 'entity:node'
@@ -25,7 +44,22 @@ field_settings:
     label: Title
     datasource_id: 'entity:node'
     property_path: title
-    type: string
+    type: text
+    boost: 0.5
+  status:
+    label: status
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
 datasource_settings:
   'entity:node':
     bundles:
@@ -37,7 +71,71 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  entity_status: {  }
+  highlight:
+    highlight: always
+    highlight_partial: false
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields: {  }
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  html_filter:
+    all_fields: false
+    fields:
+      - article_content
+      - body
+      - title
+    title: true
+    alt: true
+    tags:
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      b: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: false
+    fields:
+      - article_content
+      - body
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
   rendered_item: {  }
+  stemmer:
+    all_fields: false
+    fields:
+      - article_content
+      - body
+      - title
+    exceptions:
+      texan: texa
+      mexican: mexic
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  tokenizer:
+    all_fields: false
+    fields:
+      - article_content
+      - body
+      - title
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
 tracker_settings:
   default:
     indexing_order: lifo
