@@ -1,0 +1,7 @@
+uuid: ee530cb6-baef-4480-ac1d-6c8cb33c8a7e
+langcode: en
+status: true
+dependencies: {  }
+id: card
+label: Card
+behavior_plugins: {  }

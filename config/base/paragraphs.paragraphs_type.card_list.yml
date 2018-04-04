@@ -1,0 +1,7 @@
+uuid: aff447d6-8cd4-491f-94ed-8edf3b0459b8
+langcode: en
+status: true
+dependencies: {  }
+id: card_list
+label: 'Card List'
+behavior_plugins: {  }

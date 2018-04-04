@@ -1,0 +1,21 @@
+uuid: dbd88cdf-64ed-4be1-85ae-0ac59c245b22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_description
+    - paragraphs.paragraphs_type.card
+  module:
+    - text
+id: paragraph.card.field_card_description
+field_name: field_card_description
+entity_type: paragraph
+bundle: card
+label: 'Card Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
