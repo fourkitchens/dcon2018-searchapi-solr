@@ -1,0 +1,29 @@
+uuid: 6ed5bb22-7a24-4ed2-962e-f792f430ac19
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.search
+  module:
+    - system
+    - views
+  theme:
+    - thunder_base
+id: search_page_form
+theme: thunder_base
+region: content
+weight: -3
+provider: null
+plugin: 'views_exposed_filter_block:search-search'
+settings:
+  id: 'views_exposed_filter_block:search-search'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /search
+    negate: false
+    context_mapping: {  }

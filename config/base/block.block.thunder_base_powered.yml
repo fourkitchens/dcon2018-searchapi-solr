@@ -11,7 +11,7 @@ _core:
 id: thunder_base_powered
 theme: thunder_base
 region: footer_fifth
-weight: 10
+weight: -7
 provider: null
 plugin: thunder_powered_by_block
 settings:

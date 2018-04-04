@@ -9,7 +9,7 @@ _core:
 id: thunder_base_local_actions
 theme: thunder_base
 region: content
-weight: -20
+weight: -4
 provider: null
 plugin: local_actions_block
 settings:
