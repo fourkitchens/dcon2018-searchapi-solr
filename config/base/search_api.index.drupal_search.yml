@@ -32,6 +32,17 @@ field_settings:
     indexed_locked: true
     type_locked: true
     hidden: true
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          article: default
+          page: default
   body:
     label: Body
     datasource_id: 'entity:node'

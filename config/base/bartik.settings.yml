@@ -1,10 +1,10 @@
-logo:
-  use_default: false
-  path: 4klogo100.png
 features:
   node_user_picture: true
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
+logo:
+  use_default: false
+  path: 4klogo100.png
 favicon:
   use_default: true

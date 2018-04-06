@@ -8,6 +8,7 @@ module:
   breakpoint: 0
   checklistapi: 0
   ckeditor: 0
+  color: 0
   config: 0
   config_selector: 0
   config_update: 0
