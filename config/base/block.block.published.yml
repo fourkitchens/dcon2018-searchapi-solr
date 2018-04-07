@@ -1,0 +1,22 @@
+uuid: efbc5df5-1ee7-442d-81ae-d0d169a42f3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.published
+  module:
+    - facets
+  theme:
+    - thunder_base
+id: published
+theme: thunder_base
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:published'
+settings:
+  id: 'facet_block:published'
+  label: 'Filter by Year'
+  provider: facets
+  label_display: visible
+visibility: {  }

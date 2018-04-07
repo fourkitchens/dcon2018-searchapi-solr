@@ -1,0 +1,22 @@
+uuid: 2b0a039e-1973-4f57-8529-b6728b680a70
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.channel
+  module:
+    - facets
+  theme:
+    - thunder_base
+id: channel
+theme: thunder_base
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'facet_block:channel'
+settings:
+  id: 'facet_block:channel'
+  label: 'Filter by Channel'
+  provider: facets
+  label_display: visible
+visibility: {  }

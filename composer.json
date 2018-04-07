@@ -37,6 +37,19 @@
         {
             "type": "package",
             "package": {
+                "name": "simeydotme/jQuery-ui-Slider-Pips",
+                "version": "1.11.3",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://github.com/simeydotme/jQuery-ui-Slider-Pips.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "library-enyo/dropzone",
                 "version": "5.4.0",
                 "type": "drupal-library",
@@ -61,7 +74,9 @@
         "drupal/search_api": "^1.7",
         "drupal/search_api_solr": "^1.2",
         "drupal/facets": "^1.0@beta",
-        "library-enyo/dropzone": "^5.4.0"
+        "library-enyo/dropzone": "^5.4.0",
+        "simeydotme/jQuery-ui-Slider-Pips": "1.11.3"
+
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -98,7 +113,12 @@
             "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
-        "enable-patching": true
+        "enable-patching": true,
+        "patches": {
+            "drupal/facets": {
+                "Update jquery.ui.slider.pips JS/CSS paths": "https://www.drupal.org/files/issues/update-facets-range-widget-library-paths-2943636-2.patch"
+            }
+        }
     },
     "config": {
         "bin-dir": "bin/"

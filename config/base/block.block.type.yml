@@ -1,0 +1,22 @@
+uuid: 8af5da98-a4f1-4caf-a1a6-9aa041648ddd
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.type
+  module:
+    - facets
+  theme:
+    - thunder_base
+id: type
+theme: thunder_base
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'facet_block:type'
+settings:
+  id: 'facet_block:type'
+  label: 'Filter by Type'
+  provider: facets
+  label_display: visible
+visibility: {  }
