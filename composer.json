@@ -33,6 +33,19 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "library-enyo/dropzone",
+                "version": "5.4.0",
+                "type": "drupal-library",
+                "source": {
+                    "url": "https://gitlab.com/meno/dropzone.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         }
     ],
     "require": {
@@ -47,7 +60,8 @@
         "webmozart/path-util": "^2.3",
         "drupal/search_api": "^1.7",
         "drupal/search_api_solr": "^1.2",
-        "drupal/facets": "^1.0@beta"
+        "drupal/facets": "^1.0@beta",
+        "library-enyo/dropzone": "^5.4.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
