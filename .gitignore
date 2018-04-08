@@ -8,8 +8,12 @@ docroot/modules/contrib
 docroot/themes/contrib
 docroot/profiles/contrib
 
-# Ignore Drupal's file directory
-docroot/sites/default/files
+# Ignore files subdirectories
+docroot/sites/default/files/css
+docroot/sites/default/files/styles
+docroot/sites/default/files/js
+docroot/sites/default/files/php
+
 private/*
 tmp/*
 
@@ -24,10 +28,6 @@ docroot/sites/*/settings.local.php
 docroot/sites/*/settings.devdesktop.php
 docroot/sites/*/services*.yml
 
-# Ignore paths that contain user-generated content.
-docroot/sites/*/files
-docroot/sites/*/private
-
 # Ignore SimpleTest multi-site environment.
 docroot/sites/simpletest
 
@@ -38,3 +38,4 @@ docroot/sites/*.dd
 reference/*
 !reference/.gitkeep
 !reference/db.sql.gz
+!reference/db-export-content.sql.gz
