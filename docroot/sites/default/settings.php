@@ -267,8 +267,6 @@ if (getenv('LANDO_APP_NAME')) {
 $config_directories = array();
 $config_directories = array(
   'sync' => '../config/base',
-  'local' => '../config/local',
-  'dev' => '../config/dev'
 );
 
 /**
