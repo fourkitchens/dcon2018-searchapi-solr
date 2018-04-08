@@ -1,0 +1,32 @@
+uuid: 0b22d39b-eede-4b2a-9b05-a4e7dec3e532
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sidebar
+  module:
+    - ctools
+    - views
+  theme:
+    - thunder_base
+id: views_block__sidebar_block_1
+theme: thunder_base
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:sidebar-block_1'
+settings:
+  id: 'views_block:sidebar-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

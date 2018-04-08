@@ -1,0 +1,21 @@
+article.teaser .left {
+  float: left;
+  margin-right: 20px;
+}
+
+article.teaser {
+  clear: both;
+}
+
+.path-frontpage #sidebar-first {
+  display: none;
+}
+
+.path-frontpage.layout-sidebar-first #content {
+  width: 100%;
+  margin: 0;
+}
+
+.path-search .view-content .views-row {
+  margin: 10px 0;
+}

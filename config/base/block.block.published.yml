@@ -6,6 +6,7 @@ dependencies:
     - facets.facet.published
   module:
     - facets
+    - system
   theme:
     - thunder_base
 id: published
@@ -19,4 +20,9 @@ settings:
   label: 'Filter by Year'
   provider: facets
   label_display: visible
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
