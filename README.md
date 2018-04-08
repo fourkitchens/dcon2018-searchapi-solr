@@ -1,12 +1,9 @@
 # DrupalCon 2018 - Solr Search Example
 
-
-
 ## Requirements
 - Composer
 - Lando
 - Docker
-
 
 ## Set-up
 - Run: `composer install`
@@ -15,5 +12,4 @@
 - Run: `lando drush cim sync -y`
 
 Having issues with admin styling not working correctly?
-Run: `sudo docroot/sites/default/chmod -R 777 files`
-
+Run: `sudo chmod -R 777 docroot/sites/default/files`
