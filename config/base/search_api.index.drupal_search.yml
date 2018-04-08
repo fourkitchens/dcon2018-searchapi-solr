@@ -156,6 +156,51 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -6
+  stopwords:
+    all_fields: false
+    fields:
+      - article_content
+      - body
+      - title
+    stopwords:
+      - a
+      - an
+      - and
+      - are
+      - as
+      - at
+      - be
+      - but
+      - by
+      - for
+      - if
+      - in
+      - into
+      - is
+      - it
+      - 'no'
+      - not
+      - of
+      - 'on'
+      - or
+      - s
+      - such
+      - t
+      - that
+      - the
+      - their
+      - then
+      - there
+      - these
+      - they
+      - this
+      - to
+      - was
+      - will
+      - with
+    weights:
+      preprocess_index: -5
+      preprocess_query: -2
 tracker_settings:
   default:
     indexing_order: lifo

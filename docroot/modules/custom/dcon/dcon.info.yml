@@ -1,0 +1,6 @@
+name: Drupalcon 2018
+type: module
+description: Helper module
+package: Custom
+core: '8.x'
+project: 'dcon'
