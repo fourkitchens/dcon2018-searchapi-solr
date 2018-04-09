@@ -144,18 +144,6 @@ processor_settings:
     weights:
       preprocess_index: 0
       preprocess_query: 0
-  tokenizer:
-    all_fields: false
-    fields:
-      - article_content
-      - body
-      - title
-    spaces: ''
-    overlap_cjk: 1
-    minimum_word_size: '3'
-    weights:
-      preprocess_index: -6
-      preprocess_query: -6
   stopwords:
     all_fields: false
     fields:
@@ -201,9 +189,21 @@ processor_settings:
     weights:
       preprocess_index: -5
       preprocess_query: -2
+  tokenizer:
+    all_fields: false
+    fields:
+      - article_content
+      - body
+      - title
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
 tracker_settings:
   default:
-    indexing_order: lifo
+    indexing_order: fifo
 options:
   index_directly: true
   cron_limit: 50
